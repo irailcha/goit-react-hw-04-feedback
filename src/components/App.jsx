@@ -49,8 +49,8 @@ const countPositiveFeedbackPercentage = () => {
  return  ( <div className="app">
   <Section 
   title="Please leave feedback">
-          <FeedbackOptions
-            options={["good", "neutral", "bad"]}
+           <FeedbackOptions
+            options={Object.keys({good, neutral, bad})}
             onLeaveFeedback={handleClick}/>
 
 
